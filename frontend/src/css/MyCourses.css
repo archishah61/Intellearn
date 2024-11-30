@@ -1,0 +1,135 @@
+.my-courses-details{
+    margin-left: 15%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* CSS for Buttons */
+.course-filter-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.course-filter-buttons button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #000;
+    font-weight: normal;
+    position: relative;
+}
+
+.course-filter-buttons button::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #4B0082; /* Purple color for the underline */
+    transition: width 0.3s ease;
+    margin-top: 8px;
+}
+
+.course-filter-buttons button:hover {
+    font-weight: bold;
+}
+
+.course-filter-buttons button.active {
+    font-weight: bold;
+}
+
+.course-filter-buttons button.active::after {
+    width: 100%; /* Show underline when active */
+}
+
+.course-filter-buttons button:not(.active):hover::after {
+    width: 100%; /* Show underline on hover */
+}
+
+.dflex{
+    border: none;
+}
+/* Responsive Styles */
+
+@media (max-width: 992px) {
+    .course-card {
+        max-width: 280px;
+    }
+
+    .course-filter-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-filter-buttons button {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .my-courses-details {
+        padding: 10px;
+        width: 380px;
+        margin-left: 35%;
+    }
+
+    .course-filter-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .course-filter-buttons button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .card-body h5 {
+        font-size: 16px;
+    }
+
+    .card-body b {
+        font-size: 16px;
+    }
+
+    .dflex{
+        margin-top: 0px;
+        margin-left: -100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .my-courses-details {
+        padding: 5px;
+    }
+
+    .course-card {
+        margin: 5px 0;
+    }
+
+    .card-img-top {
+        height: 130px;
+    }
+
+    .card-body h5 {
+        font-size: 14px;
+    }
+
+    .card-body b {
+        font-size: 14px;
+    }
+
+    .card-body p {
+        font-size: 14px;
+    }
+}

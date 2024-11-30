@@ -1,0 +1,143 @@
+body {
+    background-color: white;
+}
+
+.dashboard {
+    margin-left: 20%;
+}
+
+.summery {
+    height: 50vh;
+    width: 150vh;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.details {
+    height: 25vh;
+    width: 35vh;
+    border-radius: 20px;
+    margin: 20px 40px;
+
+}
+
+.details .enrolled_course {
+    padding-left: 25px;
+    display: flex;
+}
+
+.enrolled_course .img{
+    width: 50px;
+    height: 15px;
+    padding-top: 50px;
+}
+
+.enrolled_course .data {
+    padding-left: 10px;
+    padding-top: 30px;
+}
+
+.enrolled_course .data b {
+    font-size: 40px;
+}
+
+.enrolled_course .data pre {
+    font-size: 20px;
+}
+
+.feedback{
+    height: 50vh;
+    width: 150vh;
+    margin-top: 50px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.feedback_details{
+    width: 90% ;
+    padding-left: 50px;
+    padding-top: 50px;
+    
+}
+
+@media (max-width: 992px) {
+    .dashboard {
+        margin-left: 5%;
+    }
+
+    .summery, .feedback {
+        width: 100%;
+    }
+
+    .details {
+        width: 28vh;
+    }
+
+    .feedback_details {
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        margin-left: 40%;
+    }
+
+    .summery, .feedback {
+        width: 100%;
+        height: auto;
+    }
+
+    .details {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .details .enrolled_course {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .enrolled_course img {
+        width: 200px;
+        height: 70px;
+        margin-top: -20px;
+    }
+
+    .enrolled_course .data b {
+        font-size: 30px;
+    }
+
+    .enrolled_course .data pre {
+        font-size: 16px;
+    }
+
+    .feedback_details {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .data{
+        margin-left: 100px;
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .summery, .feedback {
+        padding: 20px;
+    }
+
+    .details {
+        margin: 10px 0;
+        height: auto;
+    }
+
+    .feedback_details {
+        width: 100%;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+}

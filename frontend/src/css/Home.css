@@ -1,0 +1,495 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.video-section {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    /* Ensure no overflow from the video section */
+}
+
+.video-wrapper {
+    position: absolute;
+    /* Use absolute positioning to cover full screen */
+    overflow: hidden;
+    /* Hide any overflow from the video */
+}
+
+.video-fullscreen {
+    position: absolute;
+    /* Ensure the video covers the wrapper */
+    top: 50%;
+    left: 50%;
+    height: 120%;
+    width: 150%;
+    object-fit: cover;
+    /* Ensure the video covers the container */
+    object-position: center;
+    /* Center the video */
+    transform: translate(-50%, -50%);
+    /* Center the video */
+    z-index: 1;
+    /* Ensure the video is above other elements */
+}
+
+.video-caption-one,
+.video-caption-two {
+    position: absolute;
+    font-size: 24px;
+    color: white;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.video-caption-one {
+    top: 20%;
+    /* Adjust top positioning if necessary */
+}
+
+.video-caption-two {
+    top: 30%;
+    /* Adjust top positioning if necessary */
+}
+
+.startbutton {
+    position: absolute;
+    font-size: 24px;
+    background-color: white;
+    z-index: 2;
+    top: 40%;
+    /* Adjust top positioning if necessary */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.overlap-container {
+    position: absolute;
+    bottom: -45%;
+    /* Positioned at the bottom of the image */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* Align items at the bottom */
+    gap: 40px;
+    /* Space between the divs */
+    padding: 20px;
+    /* Optional padding for additional space */
+    box-sizing: border-box;
+    /* Includes padding in width calculation */
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
+    z-index: 3;
+}
+
+.overlap-div {
+    width: calc(25% - 40px);
+    /* 4 divs in a row with space */
+    background-color: #22223b;
+    /* Semi-transparent background */
+    color: white;
+    display: flex;
+    height: 250px;
+    width: 300px;
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: flex-start;
+    /* Align items to the left */
+    padding: 40px;
+    box-sizing: border-box;
+    /* Includes padding in width calculation */
+    border-radius: 10px;
+    text-align: left;
+    /* Align text to the left */
+    transition: transform 0.3s ease, box-shadow rgb(0, 0, 0, 0.2) ease;
+    overflow: visible;
+}
+
+.overlap-div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.5);
+}
+
+/* Ensure block-level display with padding */
+.overlap-div h5,
+.overlap-div p {
+    display: block;
+    margin: 0;
+    color: #2C3531;
+
+}
+
+/* Specific font sizes for different elements */
+
+.overlap-div h5 {
+    font-size: 30px;
+    /* Smaller font size than h1 */
+    font-weight: bold;
+    margin-top: 5px;
+    /* Space between h1 and h5 */
+}
+
+.overlap-div p {
+    font-size: 20px;
+    /* Font size for p */
+    margin-top: 20px;
+    /* Space between h5 and p */
+}
+
+
+/* About Us Section */
+.about-us {
+    padding: 60px 20px;
+}
+
+.about-us img {
+    margin-top: 170px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.about-button-hover1 {
+    width: 60px;
+    height: 60px;
+    border: none;
+    transition: transform 0.7s ease;
+}
+
+.about-button-hover1:hover {
+    color: #D1E8E2;
+    transform: scale(1.05);
+}
+
+/* Courses Section */
+.courses {
+    padding: 60px 20px;
+}
+
+.courses .card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.courses .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-img-top {
+    max-height: 30 0px;
+    object-fit: cover;
+}
+
+/* Features Section */
+.features {
+    padding: 60px 20px;
+}
+
+.feature-item {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.bi {
+    font-size: 3rem;
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 60px 20px;
+}
+
+.review-item {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.review-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* CTA Section */
+.cta {
+    padding: 80px 20px;
+    background-color: #0044cc;
+    color: #ffffff;
+    text-align: center;
+}
+
+.cta .btn-light {
+    background-color: #ffffff;
+    color: #4a4e69;
+    border: 2px solid #4a4e69;
+}
+
+/* Animated Stats Section */
+.stats {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.stat-item {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.stat-count {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0044cc;
+    margin: 0;
+}
+
+/* Video Introduction Section */
+.video-intro {
+    padding: 60px 20px;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-top: 56.25%;
+    /* 16:9 aspect ratio */
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.video-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Client Logos Section */
+.client-logos {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.client-logos .logo-item {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.client-logos .logo-item:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+/* Responsive Design */
+
+
+@media screen and (max-width: 1024px) {
+    .video-caption-one {
+        font-size: 1.8rem;
+        top: 18%;
+    }
+
+    .video-caption-two {
+        font-size: 1rem;
+        top: 32%;
+    }
+
+    .startbutton {
+        font-size: 1rem;
+        top: 42%;
+    }
+
+    .overlap-div {
+        width: 45%;
+        padding: 15px;
+    }
+
+    .card {
+        margin-right: 2rem;
+    }
+
+    .courses h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Smartphones */
+@media screen and (max-width: 768px) {
+    .video-caption-one {
+        font-size: 1.5rem;
+        top: 10%;
+    }
+
+    .video-caption-two {
+        font-size: 0.9rem;
+        top: 35%;
+    }
+
+    .startbutton {
+        font-size: 0.9rem;
+        top: 62%;
+    }
+
+    .overlap-container {
+        flex-direction: column;
+        align-items: center;
+        bottom: -20%;
+    }
+
+    .overlap-div {
+        width: 80%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .overlap-div h5 {
+        font-size: 1.2rem;
+    }
+
+    .overlap-div p {
+        font-size: 0.9rem;
+    }
+
+    .about-us {
+        margin-top: 400px;
+    }
+
+    .card {
+        width: calc(100% - 2rem);
+        margin-right: 0;
+        margin-bottom: 1rem;
+        margin-left: 80px;
+    }
+
+    .courses h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    a.bg-dark-teal {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .feature-item{
+        margin-top: 10px;
+    }
+
+    .contact{
+        margin-top: 50px;
+    }
+
+}
+
+/* Small smartphones */
+@media screen and (max-width: 480px) {
+    .video-caption-one {
+        font-size: 1.2rem;
+        top: 12%;
+    }
+
+    .video-caption-two {
+        font-size: 0.8rem;
+        top: 28%;
+    }
+
+    .startbutton {
+        font-size: 0.8rem;
+        top: 38%;
+        padding: 8px 15px;
+    }
+
+    .overlap-container {
+        bottom: -15%;
+    }
+
+    .overlap-div {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .overlap-div h5 {
+        font-size: 1rem;
+    }
+
+    .overlap-div p {
+        font-size: 0.8rem;
+    }
+
+    .courses h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .card-img-top {
+        height: 120px;
+    }
+
+    .card-body {
+        padding: 0.6rem;
+    }
+
+    .card-title {
+        font-size: 0.9rem;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+
+    a.bg-dark-teal {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.75rem;
+    }
+
+    .card {
+        width: calc(100% - 1.5rem);
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    /* Decrease the padding in the container */
+    .container {
+        padding: 0 1rem;
+    }
+}

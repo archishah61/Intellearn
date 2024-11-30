@@ -1,0 +1,64 @@
+/* Common styles for navbar */
+.navbar {
+    display: flex;
+    padding: 10px;
+    background-color: #333;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* Horizontal alignment */
+.horizontal {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Vertical alignment */
+.vertical {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #4a4e69; 
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #ffffff; 
+}
+
+.navbar-brand:hover {
+    color: #d3d3d3;
+}
+
+.nav-link {
+    color: #ffffff; 
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #cce0ff;
+}
+
+.nav-link.active {
+    color: #ffeb3b;
+    font-weight: bold; 
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;base64,...'); 
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .navbar-nav {
+        margin-top: 10px;
+    }
+}

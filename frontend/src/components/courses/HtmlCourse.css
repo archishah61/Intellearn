@@ -1,0 +1,147 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Container for content */
+.content-container {
+    margin-left: var(--loggedin-margin, 0%);
+}
+
+.separators{
+    width: 250px;
+    border: 1px dashed gray;
+    height: 1px;
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 992px) {
+    .col-8 {
+        padding: 50px 100px;
+    }
+    
+    .col-4 {
+        width: 300px;
+    }
+
+    .course-image img {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .course-btns {
+        margin-right: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .enroll {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+/* Adjustments for medium screens */
+@media (max-width: 991px) and (min-width: 768px) {
+    .col-8 {
+        padding: 30px 50px;
+    }
+
+    .col-4 {
+        width: 100%;
+    }
+
+    .course-btns {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .enroll {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .course-image img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 767px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-8, .col-4 {
+        padding: 20px;
+    }
+
+    .course-btns {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .enroll {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .course-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .course-details {
+        padding: 10px;
+    }
+
+    .info-value {
+        display: block;
+        text-align: right;
+        color: gray;
+    }
+}
+
+/* Additional styling */
+.separator {
+    height: 40px;
+    border: 1px solid gray;
+    width: 0px;
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+.course-page {
+    margin-top: 50px;
+}
+
+.course-details {
+    margin-top: 10px;
+}
+
+.course-details div {
+    margin-top: 10px;
+}
+
+.enroll {
+    display: block;
+    margin-top: 20px;
+}
+
+.info-item {
+    height: 100px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.info-value {
+    display: inline-block;
+    width: 115px;
+    text-align: right;
+    color: gray;
+}

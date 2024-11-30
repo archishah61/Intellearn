@@ -1,0 +1,177 @@
+.card-display {
+    margin: 100px;
+    display: inline-block;
+    justify-content: space-evenly;
+}
+
+.search {
+    border: 1px solid lightgray;
+    margin-left: 30px;
+    width: 280px;
+    height: 100px;
+    padding: 10px;
+    position: fixed;
+}
+
+.categories {
+    border: 1px solid lightgray;
+    margin-left: 30px;
+    margin-top: 120px;
+    width: 280px;
+    padding: 20px;
+    padding-left: 20px;
+    position: fixed;
+}
+
+.col-9 {
+    border: none;
+}
+
+.cat-btn {
+    margin-top: 20px;
+    border: 1px solid black;
+    width: 230px;
+    padding: 5px 0px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.cat-btn:hover {
+    background-color: lightskyblue;
+}
+
+.card-img {
+    padding: 10px;
+}
+
+.cat-price {
+    text-align: center;
+}
+
+.course-page {
+    margin-top: 70px;
+}
+
+.course-details {
+    margin-top: 70px;
+    border: 1px solid lightgray;
+    padding: 10px;
+
+}
+
+.enroll {
+    width: 250px;
+    margin-top: 20px;
+    background-color: lightgreen;
+    border: 0px;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.course-btns {
+    display: inline-block;
+    padding: 5px 20px;
+    border: 0px;
+
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid #ddd;
+}
+
+.instructor-img {
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.instructor {
+    position: absolute;
+    height: 180px;
+    width: 500px;
+    background-color: whitesmoke;
+    z-index: 1;
+    color: black;
+    margin-top: -200px;
+    margin-left: 200px;
+    padding: 20px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .col-3,
+    .col-9 {
+        width: 100%;
+    }
+
+    .card {
+        width: calc(100% - 20px);
+        /* Full width card on smaller screens */
+    }
+
+    .card-img {
+        height: 150px;
+        /* Adjust card image height */
+    }
+
+    .search,
+    .categories {
+        width: 45%;
+        position: absolute;
+        top: auto;
+        margin-left: 150px;
+        /* Change from fixed to relative */
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    .d-flex {
+        margin-top: 500px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: calc(100% - 10px);
+        /* Full width card on small devices */
+        margin-bottom: 15px;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .card h5 {
+        font-size: 1rem;
+    }
+
+    .card-img {
+        height: 120px;
+        /* Reduce card image height */
+    }
+
+    .card-body i.fa {
+        font-size: 0.9rem;
+    }
+
+    .search,
+    .categories {
+        position: unset;
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    .categories button {
+        font-size: 0.8rem;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}

@@ -1,0 +1,121 @@
+/* Global styles */
+body {
+    padding: 30px;
+    background-color: #116466;
+}
+
+/* Column styles */
+.col-8 {
+    padding: 30px 50px;
+}
+
+.col-4 {
+    padding: 20px;
+    max-width: 350px;
+}
+
+/* Header styles */
+h4 {
+    margin-bottom: 20px;
+}
+
+/* Section styles */
+.course-details,
+.course-page {
+    margin-top: 20px;
+}
+
+.course-details div,
+.course-page div {
+    margin-top: 20px;
+}
+
+/* Divider styles */
+.divider {
+    height: 40px;
+    border: 1px solid gray;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+/* Course info styles */
+.course-info {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.course-price i {
+    margin-right: 5px;
+}
+
+/* Image styles */
+.course-image {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+/* Button styles */
+.course-btns {
+    margin: 10px 10px 20px 0;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/* Course details section styles */
+.course-details {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.course-details h4 {
+    margin-bottom: 15px;
+}
+
+.dashed-border {
+    border-bottom: 1px dashed lightgray;
+    margin: 15px 0;
+}
+
+/* Course detail item styles */
+.course-detail-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px; 
+}
+
+.course-detail-item i {
+    min-width:20px; /* Ensure icons are aligned */
+    color: #333;
+}
+
+.course-detail-item span {
+    flex: 1; /* Allow label to take available space */
+    font-weight: bold;
+}
+
+.course-detail-item div {
+    flex: 1; /* Align value to the right */
+    text-align: right;
+    color: gray;
+}
+
+/* Enroll button */
+.enroll {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+}
+
